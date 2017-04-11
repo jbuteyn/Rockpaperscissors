@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace lab12
 {
-    interface Player
+    public interface IPlayer
     {
+        char output();
+        string returnname(); 
+        
     }
 }
