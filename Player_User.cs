@@ -9,23 +9,49 @@ namespace lab12
     class Player_User : IPlayer
     {
         string name;
-        char input;
-        public Player_User(string name, char input)
+        char roshambo;
+        string response;
+        public Player_User()
         {
-            this.name = name;
-            this.input = input;
+            
 
 
         }
-        public char output()
+        public string newname()
         {
-            return input;
+            Console.WriteLine("Please enter your name");
+            name = Console.ReadLine();
+            return name;
+        }
+        public char Roshambo()
+        {
+            Console.WriteLine("What would you like to throw?\nRock, Paper, or Scissors");
+            response = Console.ReadLine();
+            string responseTwo = response.ToLower();
+            roshambo = responseTwo[0];
+            return roshambo;
         }
         public string returnname()
         { 
 
             return name;
         }
+        public char returninput()
+        {
+
+            return roshambo;
+
+        }
+        public string returnfullplay()
+        {
+            return response;
+
+        }
+        
+ 
+
 
     }
-}
+
+    }
+

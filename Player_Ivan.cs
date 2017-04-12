@@ -10,26 +10,33 @@ namespace lab12
     {
         Random rnd = new Random();
         private string name = "Ivan";
-        
-
+        string response;
+        string responseNorm;
         public Player_Ivan()
         {
             
 
         }
 
-        public char output()
+        public char Roshambo()
         {
-            string response = "RPS";
-            int rand = rnd.Next(1,3);
-            char play = response[rand];
-
+            string[] arrayR = new string[] { "Rock", "Paper", "Scissors" };
+            int rand = rnd.Next(0,3);
+            string responseNorm = arrayR[rand];
+            response = responseNorm.ToLower();
+            char play = response[0];
             return play;
         }
         public string returnname()
         {
             return name;
 
+
+        }
+        public string returnfullplay()
+        {
+
+            return responseNorm;
 
         }
 

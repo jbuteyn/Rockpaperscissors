@@ -9,6 +9,7 @@ namespace lab12
     class Player_Rocky : IPlayer
     {
         private char response = 'r';
+        private string fullResponse = "Rock";
         private string name = "Rocky";
 
         public Player_Rocky()
@@ -18,7 +19,7 @@ namespace lab12
 
         }
         
-        public char output()
+        public char Roshambo()
         {
             return response;
         }
@@ -26,6 +27,10 @@ namespace lab12
         public string returnname()
         {
             return name;
+        }
+        public string returnfullplay()
+        {
+            return fullResponse;
         }
     }
 }

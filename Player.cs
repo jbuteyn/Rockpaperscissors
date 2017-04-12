@@ -8,8 +8,9 @@ namespace lab12
 {
     public interface IPlayer
     {
-        char output();
-        string returnname(); 
+        char Roshambo();
+        string returnname();
+        string returnfullplay();
         
     }
 }
